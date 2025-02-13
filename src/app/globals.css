@@ -39,7 +39,7 @@ body {
   @apply flex flex-col gap-8 md:p-6 md:bg-[#08252B] md:border border-[#0E464F] md:rounded-[32px]
 }
 .container_background {
-  @apply bg rounded-xl p-6 text-center border border-[#07373F] flex flex-col gap-[8px]
+  @apply rounded-xl p-6 text-center border border-[#07373F] flex flex-col gap-[8px]
 }
 
 .form_labels {

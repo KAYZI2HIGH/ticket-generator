@@ -10,7 +10,7 @@ export default function StepOne() {
 
   return (
     <div className="form_container">
-      <div className="container_background font-roboto">
+      <div className="container_background bg font-roboto">
         <h1 className="text-[48px] md:text-[62px] md:font-semibold text-[#FAFAFA] font-raga md:tracking-wide">
           Techember Fest '25
         </h1>
