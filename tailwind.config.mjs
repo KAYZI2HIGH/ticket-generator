@@ -10,6 +10,11 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        strokes: "var(--strokes)",
+      },
+      fontFamily: {
+        raga: ["Road Rage", "sans-serif"],
+        roboto: ["Roboto", "sans-serif"],
       },
     },
   },
