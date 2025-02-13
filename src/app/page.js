@@ -40,7 +40,7 @@ const HomePage = () => {
                 >
                   <div>
                     <div className="w-full flex flex-col sm:flex-row justify-between md:items-end gap-1">
-                      <h2 className="text-2xl md:text-3xl font-light capitalize">
+                      <h2 className="text-2xl md:text-3xl font-light capitalize font-Jejumyeongjo">
                         {step.name}
                       </h2>
                       <p className="text-[16px] text-gray-300 font-thin font-roboto">
@@ -49,7 +49,7 @@ const HomePage = () => {
                     </div>
                     <div className="w-full h-1 bg-[#0E464F] my-3 rounded-full overflow-hidden">
                       <div
-                        className={`h-full w-${step.index}/3 bg-[#24A0B5] rounded-full`}
+                        className={`h-full w-${currentStep}/3 bg-[#24A0B5] rounded-full`}
                       ></div>
                     </div>
                   </div>

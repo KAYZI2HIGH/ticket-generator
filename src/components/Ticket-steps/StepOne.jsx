@@ -64,8 +64,12 @@ export default function StepOne() {
       <div>
         <p className="text-gray-300 text-[16px] mb-2">Number of Tickets</p>
         <select
-          value={selectedTickets}
-          onChange={(e) => setSelectedTickets(Number(e.target.value))}
+          onChange={(e) => setTicketInfo(prev => { 
+            return {
+              ...prev,
+              numberOfTickets: Number(e.target.value),
+            };
+          })}
           className="input_fields"
         >
           {[...Array(10).keys()].map((num) => (

@@ -23,6 +23,7 @@ export function AppWrapper({ children }) {
             specialRequest: "",
           },
           ticketType: "regular access",
+          numberOfTickets: 1,
         }
       );
     }
@@ -34,6 +35,7 @@ export function AppWrapper({ children }) {
         specialRequest: "",
       },
       ticketType: "regular access",
+      numberOfTickets: 1,
     };
   });
 

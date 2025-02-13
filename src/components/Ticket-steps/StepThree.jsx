@@ -82,7 +82,9 @@ const StepThree = () => {
                 </div>
                 <div className="w-full space-y-1 p-1 ">
                   <p className="text-[10px] opacity-35">Ticket for:</p>
-                  <h1 className="text-[12px] font-bold">1</h1>
+                  <h1 className="text-[12px] font-bold">
+                    {ticketInfo.numberOfTickets}
+                  </h1>
                 </div>
               </div>
               <div className="mt-1 group relative">
@@ -123,7 +125,7 @@ const StepThree = () => {
               ticketType: "regular access",
             });
 
-            setCurrentStep(1)
+            setCurrentStep(1);
           }}
           className="px-4 py-3 md:w-1/3 border border-[#0E464F] rounded-lg bg-transparent text-gray-400 hover:bg-[#013338] transition-all duration-300 capitalize"
         >

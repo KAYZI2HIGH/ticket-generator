@@ -10,23 +10,36 @@
   --strokes: #197686;
 }
 
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-} */
+@font-face {
+  font-family: 'Jejumyeongjo';
+  src: url('/public/fonts/JejuMyeongjo-Regular.ttf');
+}
 
 body {
   /* color: var(--foreground); */
-  background: var(--background);
+  /* background: var(--background); */
+    background: radial-gradient(
+      52.52% 32.71% at 50% 97.66%,
+      rgba(36, 160, 181, 0.2) 0%,
+      rgba(36, 160, 181, 0) 100%
+    ), #02191d;
   padding-inline: 20px;
 }
+
+.bg {
+  background: radial-gradient(
+      57.42% 106.59% at 14.02% 32.06%,
+      rgba(36, 160, 181, 0.2) 0%,
+      rgba(36, 160, 181, 0) 100%
+    ),
+    rgba(10,12,17,0.1);
+}
+
 .form_container {
   @apply flex flex-col gap-8 md:p-6 md:bg-[#08252B] md:border border-[#0E464F] md:rounded-[32px]
 }
 .container_background {
-  @apply bg-[#0A0C11]/10 filter backdrop:blur rounded-xl p-6 text-center border border-[#07373F] flex flex-col gap-[8px]
+  @apply bg rounded-xl p-6 text-center border border-[#07373F] flex flex-col gap-[8px]
 }
 
 .form_labels {

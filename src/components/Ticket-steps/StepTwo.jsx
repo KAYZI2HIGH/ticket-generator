@@ -5,6 +5,7 @@ import ButtonGroup from "../ButtonGroup";
 import { useAppContext } from "../context";
 import ImageUploader from "../ImageUploader";
 import { useForm, Controller } from "react-hook-form";
+import { useEffect } from "react";
 
 const StepTwo = () => {
   const {setCurrentStep, setTicketInfo} = useAppContext()
@@ -14,8 +15,24 @@ const StepTwo = () => {
     register,
     handleSubmit,
     formState: { errors, isValid, isSubmitted },
+    watch,
+    setValue,
     reset,
   } = useForm({ mode: 'onChange' });
+
+  const formValues = watch();
+
+  useEffect(() => {
+    const savedForm = localStorage.getItem("formData");
+    if (savedForm) {
+      const parsedData = JSON.parse(savedForm);
+      Object.keys(parsedData).forEach((key) => setValue(key, parsedData[key]));
+    }
+  }, [setValue]);
+
+  useEffect(() => {
+    localStorage.setItem("formData", JSON.stringify(formValues));
+  }, [formValues]);
   
 
   const Submit = async (data) => {
@@ -39,7 +56,7 @@ const StepTwo = () => {
         },
       };
     })
-    console.log(response)
+    localStorage.removeItem("formData");
     setCurrentStep((prev) => (prev !== 3 ? prev + 1 : prev));
   };
 

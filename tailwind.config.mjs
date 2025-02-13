@@ -15,6 +15,7 @@ export default {
       fontFamily: {
         raga: ["Road Rage", "sans-serif"],
         roboto: ["Roboto", "sans-serif"],
+        Jejumyeongjo: ["JejuMyeongjo", "sans-serif"],
       },
     },
   },
