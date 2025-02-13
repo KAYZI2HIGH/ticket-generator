@@ -123,6 +123,7 @@ const StepThree = () => {
                 specialRequest: "",
               },
               ticketType: "regular access",
+              numberOfTickets: 1,
             });
 
             setCurrentStep(1);
