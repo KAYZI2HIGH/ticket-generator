@@ -3,6 +3,7 @@ import ShortenText from "@/utils/Shortentext";
 import Image from "next/image";
 import { useAppContext } from "../context";
 import ButtonGroup from "../ButtonGroup";
+import BarCode from "../BarCode";
 
 const StepThree = () => {
   const { ticketInfo, setTicketInfo, setCurrentStep } = useAppContext();
@@ -30,7 +31,7 @@ const StepThree = () => {
               <h1 className="text-[34px] text-[#FAFAFA] font-raga">
                 Techember Fest '25
               </h1>
-              <div className="space-y-1 p-1 text-[10px] *:leading-normal">
+              <div className="space-y-1 p-1 text-[13px] text-nowrap *:leading-normal">
                 <p>📍 04 Rumens road, Ikoyi, Lagos</p>
                 <p>📅 March 15, 2025 | 7:00 PM</p>
               </div>
@@ -107,6 +108,7 @@ const StepThree = () => {
               </div>
             </div>
           </div>
+        <BarCode />
         </div>
       </div>
       <div className="flex flex-col md:flex-row-reverse gap-5 justify-between mt-4">
@@ -122,7 +124,7 @@ const StepThree = () => {
                 email: "",
                 specialRequest: "",
               },
-              ticketType: "regular access",
+              ticketType: "regular",
               numberOfTickets: 1,
             });
 

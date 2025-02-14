@@ -1,28 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Road+Rage&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Road+Rage&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
 :root {
-  --background: #02191D;
-  --foreground: #05252C;
+  --background: #02191d;
+  --foreground: #05252c;
   --strokes: #197686;
 }
 
 @font-face {
-  font-family: 'Jejumyeongjo';
-  src: url('/public/fonts/JejuMyeongjo-Regular.ttf');
+  font-family: "Jejumyeongjo";
+  src: url("/public/fonts/JejuMyeongjo-Regular.ttf");
 }
 
 body {
   /* color: var(--foreground); */
   /* background: var(--background); */
-    background: radial-gradient(
+  background: radial-gradient(
       52.52% 32.71% at 50% 97.66%,
       rgba(36, 160, 181, 0.2) 0%,
       rgba(36, 160, 181, 0) 100%
-    ), #02191d;
+    ),
+    #02191d;
   padding-inline: 20px;
 }
 
@@ -32,20 +32,20 @@ body {
       rgba(36, 160, 181, 0.2) 0%,
       rgba(36, 160, 181, 0) 100%
     ),
-    rgba(10,12,17,0.1);
+    rgba(10, 12, 17, 0.1);
 }
 
 .form_container {
-  @apply flex flex-col gap-8 md:p-6 md:bg-[#08252B] md:border border-[#0E464F] md:rounded-[32px]
+  @apply flex flex-col gap-8 md:p-6 md:bg-[#08252B] md:border border-[#0E464F] md:rounded-[32px];
 }
 .container_background {
-  @apply rounded-xl p-6 text-center border border-[#07373F] flex flex-col gap-[8px]
+  @apply rounded-xl p-6 text-center border border-[#07373F] flex flex-col gap-[8px];
 }
 
 .form_labels {
-  @apply text-gray-300 text-[16px] mb-2
+  @apply text-gray-300 text-[16px] mb-2;
 }
 
 .input_fields {
-  @apply w-full bg-[#08252B] border border-[#0E464F] rounded-lg p-2 text-gray-200 focus:outline-none focus:ring-2 focus:ring-[#24A0B5]
+  @apply w-full bg-[#08252B] border border-[#0E464F] rounded-lg p-2 text-gray-200 focus:outline-none focus:ring-2 focus:ring-[#24A0B5];
 }

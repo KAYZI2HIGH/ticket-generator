@@ -56,7 +56,7 @@ const Navbar = () => {
           </li>
         </ul>
       </nav>
-      <button className="px-6 py-3 border border-[#D5EA00] rounded-xl bg-white hover:bg-[#24A0B5] hover:border-[#D9D9D9] transition text-[#0A0C11] hover:text-[#D9D9D9] duration-300">
+      <button className="px-4 py-2 md:px-5 md:py-3 border border-[#D5EA00] rounded-xl bg-white hover:bg-[#24A0B5] hover:border-[#D9D9D9] transition text-[#0A0C11] hover:text-[#D9D9D9] duration-300">
         MY TICKETS <span className="ml-2">→</span>
       </button>
     </header>

@@ -34,7 +34,7 @@ export function AppWrapper({ children }) {
         email: "",
         specialRequest: "",
       },
-      ticketType: "regular access",
+      ticketType: "regular",
       numberOfTickets: 1,
     };
   });
@@ -42,16 +42,19 @@ export function AppWrapper({ children }) {
   const [ticketTypes, setTicketTypes] = useState([
     {
       price: "free",
+      title: "regular",
       name: "regular access",
       totalAvailable: 50,
     },
     {
       price: "$150",
+      title: "vip",
       name: "vip access",
       totalAvailable: 50,
     },
     {
       price: "$250",
+      title: "vvip",
       name: "vvip access",
       totalAvailable: 50,
     },

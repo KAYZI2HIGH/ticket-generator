@@ -11,7 +11,7 @@ export default function StepOne() {
   return (
     <div className="form_container">
       <div className="container_background bg font-roboto">
-        <h1 className="text-[48px] md:text-[62px] md:font-semibold text-[#FAFAFA] font-raga md:tracking-wide">
+        <h1 className="text-[44px] md:text-[62px] md:font-semibold text-[#FAFAFA] font-raga md:tracking-wide">
           Techember Fest '25
         </h1>
         <p className="text-[14px] md:text-[16px]">
@@ -37,12 +37,12 @@ export default function StepOne() {
                 setTicketInfo((prev) => {
                   return {
                     ...prev,
-                    ticketType: type.name
+                    ticketType: type.title
                   }
                 });
               }}
               className={`p-3 border border-[#197686] rounded-lg ${
-                ticketInfo.ticketType === type.name ? "bg-[#12464E]" : ""
+                ticketInfo.ticketType === type.title ? "bg-[#12464E]" : ""
               }  hover:bg-[#2C545B] flex flex-col justify-between items-start gap-3 h-full `}
             >
               <span className="block text-2xl font-semibold capitalize">
