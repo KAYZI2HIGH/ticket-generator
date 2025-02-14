@@ -15,7 +15,7 @@ export default function StepOne() {
           Techember Fest '25
         </h1>
         <p className="text-[14px] md:text-[16px]">
-          Join us for an unforgettable experience at <br />
+          Join us for an unforgettable experience at <br className="hidden md:block"/>
           [Event Name]! Secure your spot now.
         </p>
         <div className="flex flex-col md:flex-row items-center justify-center  text-[16px] text-gray-300 mt-2">
